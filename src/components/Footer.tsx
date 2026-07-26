@@ -75,6 +75,16 @@ export function Footer({ locale, dict }: Props) {
               </Link>
             </li>
             <li>
+              <a
+                href={dict.publications.newsletter.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                {dict.publications.newsletter.cta}
+              </a>
+            </li>
+            <li>
               <Link href={`/${locale}/contact`} className="hover:text-white">
                 {dict.nav.contact}
               </Link>

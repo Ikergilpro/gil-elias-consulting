@@ -12,10 +12,40 @@ export default async function PublicationsPage({ params }: Props) {
   const locale = raw as Locale;
   const dict = getDictionary(locale);
   const t = dict.publications;
+  const n = t.newsletter;
 
   return (
     <>
       <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} />
+
+      <section className="border-b border-stone bg-stone/30">
+        <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+          <div className="flex flex-col gap-8 border border-stone bg-white p-8 md:flex-row md:items-end md:justify-between md:p-10">
+            <div className="max-w-2xl">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-sage">
+                {n.eyebrow}
+              </p>
+              <h2 className="mt-3 font-serif text-3xl text-ink md:text-4xl">
+                {n.title}
+              </h2>
+              <p className="mt-2 text-xs uppercase tracking-[0.1em] text-graphite">
+                {n.meta}
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-graphite">
+                {n.body}
+              </p>
+            </div>
+            <a
+              href={n.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center justify-center rounded-sm bg-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-ink/90"
+            >
+              {n.cta} →
+            </a>
+          </div>
+        </div>
+      </section>
 
       <section className="border-b border-stone">
         <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">

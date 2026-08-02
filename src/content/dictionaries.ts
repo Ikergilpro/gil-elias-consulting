@@ -30,6 +30,8 @@ const es = {
     rights: "Todos los derechos reservados.",
     privacy: "Privacidad",
     note: "Contenido biográfico, métricas y casos se publicarán únicamente con información verificada.",
+    linkedin: "LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/in/gil-elias-2837765/",
   },
   home: {
     eyebrow: "Maestro en Economía Empresarial | Economista",
@@ -54,12 +56,12 @@ const es = {
       {
         title: "Multilaterales e instituciones",
         body: "Diseño de programas, evaluación y asistencia técnica con estándares internacionales.",
-        href: "/economic-development",
+        href: "/services",
       },
       {
         title: "Industria e inversión",
-        body: "Desarrollo de proveedores, clústeres —incluido aeroespacial— e inteligencia de mercado.",
-        href: "/ai-expertise",
+        body: "Desarrollo de proveedores, clústeres e inteligencia de mercado.",
+        href: "/services",
       },
     ],
     practicesTitle: "Soluciones",
@@ -88,7 +90,7 @@ const es = {
         number: "04",
         title: "AI Transformation",
         tags: ["IA para gobiernos", "Organismos empresariales", "Empresas"],
-        href: "/ai-expertise",
+        href: "/services",
       },
       {
         number: "05",
@@ -127,8 +129,8 @@ const es = {
       "Más de veinticinco años diseñando e implementando estrategias de desarrollo económico, competitividad territorial, fortalecimiento industrial e inteligencia económica.",
     body: [
       "Es Maestro en Economía Empresarial (MEE) y Licenciado en Economía Internacional (LEI), con especialización en Desarrollo Regional por la Universidad Autónoma de Chihuahua (UACH). Cuenta con entrenamiento especializado en desarrollo de negocios biotecnológicos y desarrollo organizacional por la University of California San Diego (UCSD), y es egresado del Instituto de Desarrollo Económico de la Universidad de Oklahoma.",
-      "Su trayectoria combina gobierno, academia, organismos empresariales, centros de investigación y organismos internacionales. Es consultor del Banco Mundial. Ha sido secretario académico de la Facultad de Economía Internacional (UACH), Coordinador del Consejo de Desarrollo Económico de la Región de Parral, coordinador económico del CODECH, creador y coordinador de la Plataforma de Inteligencia Competitiva del Sector Privado, y Coordinador del Consejo de Desarrollo Regional Chihuahua Centro (CODER).",
-      "Fue líder inicial del programa Chihuahua Futura, orientado a definir vocaciones de la ciudad para los próximos 25 años. Actualmente es Subdirector de Industria de la Dirección de Desarrollo Económico del Municipio de Chihuahua, donde desarrolla políticas públicas de desarrollo económico con enfoque industrial.",
+      "Su trayectoria combina gobierno, academia, organismos empresariales, centros de investigación y organismos internacionales. Es consultor del Banco Mundial. Ha sido secretario académico de la Facultad de Economía Internacional (UACH), Coordinador del Consejo de Desarrollo Económico de la Región de Parral, coordinador económico del CODECH, coordinador de la Plataforma de Inteligencia Competitiva del Sector Privado, y Coordinador del Consejo de Desarrollo Regional Chihuahua Centro (CODER).",
+      "Fue coordinador del programa Chihuahua Futura, orientado a definir vocaciones de la ciudad para los próximos 25 años. Actualmente es Subdirector de Industria de la Dirección de Desarrollo Económico del Municipio de Chihuahua, donde desarrolla políticas públicas de desarrollo económico con enfoque industrial.",
     ],
     methodTitle: "Método",
     methodBody:
@@ -213,17 +215,18 @@ const es = {
       {
         period: "1996 – 2001",
         title: "Consultor y asociado",
-        org: "Centro de Investigación de Desarrollo Económico y Tecnológico (CIDET), UACH",
+        org: "Centro de Investigación de Desarrollo Económico y Tecnológico (CIDEyT), UACH",
         body: "Desarrollo territorial, planeación estratégica y desarrollo tecnológico en madera, comercio y formación empresarial.",
       },
     ],
     cta: "Solicitar consulta",
+    linkedin: "LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/in/gil-elias-2837765/",
   },
   services: {
     eyebrow: "Servicios",
-    title: "Asesoría estratégica con estándar institucional",
-    intro:
-      "Servicios diseñados para mandatos de alto valor: claridad de problema, rigor analítico e implementación orientada a resultados.",
+    title: "Asesoría estratégica",
+    intro: "",
     engagementTitle: "Modelos de engagement",
     engagements: [
       {
@@ -304,14 +307,14 @@ const es = {
     eyebrow: "Proyectos",
     title: "Proyectos estratégicos destacados",
     intro:
-      "Selección de proyectos liderados, coordinados o en los que ha participado —tomados del currículum 2026— en desarrollo económico, industria, aeroespacial e innovación.",
+      "Selección de proyectos liderados, coordinados o en los que ha participado en desarrollo económico, industria, aeroespacial e innovación.",
     categories: [
       {
         title: "Desarrollo económico y competitividad",
         items: [
           {
             title: "Chihuahua Futura",
-            role: "Líder inicial / impulsor",
+            role: "Coordinador",
             body: "Programa para definir vocaciones de la ciudad de Chihuahua a 25 años, considerando tendencias tecnológicas, en coordinación con sector público, privado e instituciones educativas.",
           },
           {
@@ -331,7 +334,7 @@ const es = {
           },
           {
             title: "Plataforma de Inteligencia Competitiva del Sector Privado (PICsp)",
-            role: "Creador y coordinador (2015–2017)",
+            role: "Coordinador (2015–2017)",
             body: "Plataforma de inteligencia económica del sector privado con equipo de economistas y analistas de datos; seguimiento a compromisos firmados a nivel estatal y municipal (Chihuahua y Juárez).",
           },
           {
@@ -423,7 +426,20 @@ const es = {
     eyebrow: "Publicaciones y estudios",
     title: "Estudios e inteligencia aplicada",
     intro:
-      "Estudios, análisis y trabajos de inteligencia económica identificados en el currículum 2026.",
+      "Estudios, análisis y trabajos de inteligencia económica.",
+    book: {
+      eyebrow: "Libro",
+      cover: "/images/publications/television-digital-norte.png",
+      coverAlt:
+        "Portada del libro Televisión digital en la frontera norte de México",
+      title: "Televisión digital en la frontera norte de México",
+      subtitle: "Retos ante la transición tecnológica",
+      meta: "Miguel Ángel Porrúa · El Colegio de la Frontera Norte",
+      chapterLabel: "Capítulo",
+      chapterTitle:
+        "Industria del televisor en Baja California y su transición tecnológica",
+      role: "Copartícipe junto con Saúl de los Santos",
+    },
     items: [
       {
         title: "Análisis de la industria electrónica en México",
@@ -444,11 +460,6 @@ const es = {
         title: "Inventario de capacidades y análisis de brechas — TI Baja California",
         meta: "Agrupamiento de tecnologías de información",
         body: "Diagnóstico de capacidades y brechas para oportunidades de mercado regional.",
-      },
-      {
-        title: "Plataforma de Inteligencia Competitiva del Sector Privado (PICsp)",
-        meta: "2015–2017 — Sector privado / Chihuahua",
-        body: "Creación de capacidad analítica estatal con equipo multidisciplinario de economistas y manejadores de datos.",
       },
     ],
     pillarsTitle: "Líneas de trabajo intelectual",
@@ -576,7 +587,7 @@ const es = {
     body: [
       "Jesús Gilberto Elías Ogaz es economista con más de veinticinco años de experiencia en el diseño e implementación de estrategias de desarrollo económico, competitividad regional, fortalecimiento industrial, innovación y atracción de inversiones. Es Maestro en Economía Empresarial, Licenciado en Economía Internacional y especialista en Desarrollo Regional por la Universidad Autónoma de Chihuahua. Es consultor del Banco Mundial.",
       "Su trayectoria combina experiencia en gobierno, academia, organismos empresariales, centros de investigación y organismos internacionales —incluyendo su rol como consultor del Banco Mundial—, liderando proyectos de alto impacto orientados al desarrollo de ecosistemas industriales, fortalecimiento de cadenas productivas, planeación estratégica, inteligencia económica y vinculación entre industria, academia y gobierno.",
-      "En los últimos años ha incorporado metodologías de inteligencia artificial, ciencia de datos, Business Intelligence y analítica avanzada para apoyar la formulación de políticas públicas, el desarrollo industrial y la toma de decisiones estratégicas. Cuenta con formación internacional en instituciones como University of Pennsylvania (Wharton), Vanderbilt University, University of Michigan, University of London, DeepLearning.AI, University of California San Diego (UCSD), University of Oklahoma, CAF, CIMAV y Tableau.",
+      "En los últimos años ha incorporado metodologías de inteligencia artificial, ciencia de datos, Business Intelligence y analítica avanzada para apoyar la formulación de políticas públicas, el desarrollo industrial y la toma de decisiones estratégicas.",
       "Actualmente se desempeña como Subdirector de Industria del Municipio de Chihuahua, donde impulsa estrategias para consolidar el ecosistema industrial de la ciudad mediante el fortalecimiento de proveedores, atracción de inversión, internacionalización, desarrollo de talento, inteligencia económica y competitividad territorial.",
     ],
     quote:
@@ -644,9 +655,12 @@ const es = {
       submit: "Enviar solicitud",
     },
     timelineOptions: ["Inmediato (< 30 días)", "1–3 meses", "Exploratorio"],
-    successTitle: "Solicitud recibida",
+    sending: "Enviando…",
+    errorBody:
+      "No se pudo enviar la solicitud. Intente de nuevo o escriba directamente a jgelias.o@gmail.com.",
+    successTitle: "Gracias por contactarme",
     successBody:
-      "Gracias. Revisaré su mensaje y responderé si hay un buen encaje. Para temas confidenciales, podemos continuar bajo NDA.",
+      "Recibí su mensaje. Lo revisaré con cuidado y le responderé a la brevedad. Para temas confidenciales, podemos continuar bajo NDA.",
     asideTitle: "Qué esperar",
     asideItems: [
       "Respuesta a solicitudes calificadas",
@@ -656,6 +670,8 @@ const es = {
     emailLabel: "Correo",
     emailValue: "jgelias.o@gmail.com",
     emailNote: "+52 614 235 6541 · Chihuahua, México",
+    linkedinLabel: "LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/in/gil-elias-2837765/",
   },
   common: {
     learnMore: "Conocer más",
@@ -691,6 +707,8 @@ const en: Dictionary = {
     rights: "All rights reserved.",
     privacy: "Privacy",
     note: "Biographical content, metrics, and case studies are published only when verified.",
+    linkedin: "LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/in/gil-elias-2837765/",
   },
   home: {
     eyebrow: "Master in Business Economics | Economist",
@@ -715,12 +733,12 @@ const en: Dictionary = {
       {
         title: "Multilaterals & institutions",
         body: "Program design, evaluation, and technical assistance to international standards.",
-        href: "/economic-development",
+        href: "/services",
       },
       {
         title: "Industry & investment",
-        body: "Supplier development, clusters—including aerospace—and market intelligence.",
-        href: "/ai-expertise",
+        body: "Supplier development, clusters, and market intelligence.",
+        href: "/services",
       },
     ],
     practicesTitle: "Solutions",
@@ -749,7 +767,7 @@ const en: Dictionary = {
         number: "04",
         title: "AI Transformation",
         tags: ["AI for governments", "Business organizations", "Companies"],
-        href: "/ai-expertise",
+        href: "/services",
       },
       {
         number: "05",
@@ -788,8 +806,8 @@ const en: Dictionary = {
       "More than twenty-five years designing and implementing strategies for economic development, territorial competitiveness, industrial strengthening, and economic intelligence.",
     body: [
       "He holds a Master’s in Business Economics (MEE) and a Bachelor’s in International Economics (LEI), with a specialization in Regional Development from Universidad Autónoma de Chihuahua (UACH). He has specialized training in biotechnology business development and organizational development from the University of California San Diego (UCSD), and is a graduate of the Economic Development Institute at the University of Oklahoma.",
-      "His career spans government, academia, business organizations, research centers, and international organizations. He is a World Bank consultant. He has served as Academic Secretary of the Faculty of International Economics (UACH), Coordinator of the Economic Development Council of the Parral region, economic coordinator of CODECH, creator and coordinator of the Private Sector Competitive Intelligence Platform, and Coordinator of the Chihuahua Centro Regional Development Council (CODER).",
-      "He was the initial leader of the Chihuahua Futura program, defining the city’s productive vocations for the next 25 years. He currently serves as Deputy Director of Industry in the Economic Development Directorate of the Municipality of Chihuahua, advancing public policies for industrial economic development.",
+      "His career spans government, academia, business organizations, research centers, and international organizations. He is a World Bank consultant. He has served as Academic Secretary of the Faculty of International Economics (UACH), Coordinator of the Economic Development Council of the Parral region, economic coordinator of CODECH, coordinator of the Private Sector Competitive Intelligence Platform, and Coordinator of the Chihuahua Centro Regional Development Council (CODER).",
+      "He was the coordinator of the Chihuahua Futura program, defining the city’s productive vocations for the next 25 years. He currently serves as Deputy Director of Industry in the Economic Development Directorate of the Municipality of Chihuahua, advancing public policies for industrial economic development.",
     ],
     methodTitle: "Method",
     methodBody:
@@ -874,17 +892,18 @@ const en: Dictionary = {
       {
         period: "1996 – 2001",
         title: "Consultant and associate",
-        org: "Economic and Technological Development Research Center (CIDET), UACH",
+        org: "Economic and Technological Development Research Center (CIDEyT), UACH",
         body: "Territorial development, strategic planning, and technological development in wood, commerce, and entrepreneurship.",
       },
     ],
     cta: "Request a consultation",
+    linkedin: "LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/in/gil-elias-2837765/",
   },
   services: {
     eyebrow: "Services",
-    title: "Strategic advisory to an institutional standard",
-    intro:
-      "Services designed for high-value mandates: problem clarity, analytical rigor, and implementation oriented to results.",
+    title: "Strategic advisory",
+    intro: "",
     engagementTitle: "Engagement models",
     engagements: [
       {
@@ -965,14 +984,14 @@ const en: Dictionary = {
     eyebrow: "Projects",
     title: "Highlighted strategic projects",
     intro:
-      "Selected projects led, coordinated, or contributed to—drawn from the 2026 curriculum vitae—across economic development, industry, aerospace, and innovation.",
+      "Selected projects led, coordinated, or contributed to across economic development, industry, aerospace, and innovation.",
     categories: [
       {
         title: "Economic development & competitiveness",
         items: [
           {
             title: "Chihuahua Futura",
-            role: "Initial leader / driver",
+            role: "Coordinator",
             body: "Program to define Chihuahua City’s productive vocations over a 25-year horizon, considering technology trends, in coordination with public, private, and education sectors.",
           },
           {
@@ -992,7 +1011,7 @@ const en: Dictionary = {
           },
           {
             title: "Private Sector Competitive Intelligence Platform (PICsp)",
-            role: "Creator and coordinator (2015–2017)",
+            role: "Coordinator (2015–2017)",
             body: "Private-sector economic intelligence platform with a team of economists and data analysts; tracked commitments signed at state and municipal level (Chihuahua and Juárez).",
           },
           {
@@ -1084,7 +1103,20 @@ const en: Dictionary = {
     eyebrow: "Publications & studies",
     title: "Studies and applied intelligence",
     intro:
-      "Studies, analyses, and economic intelligence work identified in the 2026 curriculum vitae.",
+      "Studies, analyses, and economic intelligence work.",
+    book: {
+      eyebrow: "Book",
+      cover: "/images/publications/television-digital-norte.png",
+      coverAlt:
+        "Cover of the book Digital Television on Mexico’s Northern Border",
+      title: "Digital Television on Mexico’s Northern Border",
+      subtitle: "Challenges amid technological transition",
+      meta: "Miguel Ángel Porrúa · El Colegio de la Frontera Norte",
+      chapterLabel: "Chapter",
+      chapterTitle:
+        "The television industry in Baja California and its technological transition",
+      role: "Co-author with Saúl de los Santos",
+    },
     items: [
       {
         title: "Analysis of the electronics industry in Mexico",
@@ -1105,11 +1137,6 @@ const en: Dictionary = {
         title: "Capability inventory and gap analysis — IT Baja California",
         meta: "Information technology cluster",
         body: "Diagnosis of capabilities and gaps for regional market opportunities.",
-      },
-      {
-        title: "Private Sector Competitive Intelligence Platform (PICsp)",
-        meta: "2015–2017 — Private sector / Chihuahua",
-        body: "Built statewide analytical capacity with a multidisciplinary team of economists and data handlers.",
       },
     ],
     pillarsTitle: "Intellectual workstreams",
@@ -1237,7 +1264,7 @@ const en: Dictionary = {
     body: [
       "Jesús Gilberto Elías Ogaz is an economist with more than twenty-five years of experience designing and implementing strategies for economic development, regional competitiveness, industrial strengthening, innovation, and investment attraction. He holds a Master’s in Business Economics, a Bachelor’s in International Economics, and is a specialist in Regional Development from Universidad Autónoma de Chihuahua. He is a World Bank consultant.",
       "His career combines experience in government, academia, business organizations, research centers, and international organizations—including his role as a World Bank consultant—leading high-impact projects focused on industrial ecosystems, supply-chain strengthening, strategic planning, economic intelligence, and industry–academia–government collaboration.",
-      "In recent years he has incorporated artificial intelligence, data science, Business Intelligence, and advanced analytics to support public-policy formulation, industrial development, and strategic decision-making. He has international training from institutions including University of Pennsylvania (Wharton), Vanderbilt University, University of Michigan, University of London, DeepLearning.AI, University of California San Diego (UCSD), University of Oklahoma, CAF, CIMAV, and Tableau.",
+      "In recent years he has incorporated artificial intelligence, data science, Business Intelligence, and advanced analytics to support public-policy formulation, industrial development, and strategic decision-making.",
       "He currently serves as Deputy Director of Industry for the Municipality of Chihuahua, where he advances strategies to consolidate the city’s industrial ecosystem through supplier strengthening, investment attraction, internationalization, talent development, economic intelligence, and territorial competitiveness.",
     ],
     quote:
@@ -1305,9 +1332,12 @@ const en: Dictionary = {
       submit: "Submit request",
     },
     timelineOptions: ["Immediate (< 30 days)", "1–3 months", "Exploratory"],
-    successTitle: "Request received",
+    sending: "Sending…",
+    errorBody:
+      "The request could not be sent. Please try again or email jgelias.o@gmail.com directly.",
+    successTitle: "Thank you for reaching out",
     successBody:
-      "Thank you. I will review your message and respond if there is a strong fit. For confidential matters, we can continue under NDA.",
+      "I received your message. I will review it carefully and get back to you shortly. For confidential matters, we can continue under NDA.",
     asideTitle: "What to expect",
     asideItems: [
       "Response to qualified requests",
@@ -1317,6 +1347,8 @@ const en: Dictionary = {
     emailLabel: "Email",
     emailValue: "jgelias.o@gmail.com",
     emailNote: "+52 614 235 6541 · Chihuahua, Mexico",
+    linkedinLabel: "LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/in/gil-elias-2837765/",
   },
   common: {
     learnMore: "Learn more",

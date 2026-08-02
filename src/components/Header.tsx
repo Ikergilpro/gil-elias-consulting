@@ -37,8 +37,6 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/services`, label: dict.nav.services },
     { href: `/${locale}/projects`, label: dict.nav.projects },
     { href: `/${locale}/publications`, label: dict.nav.publications },
-    { href: `/${locale}/ai-expertise`, label: dict.nav.ai },
-    { href: `/${locale}/economic-development`, label: dict.nav.economicDev },
     { href: `/${locale}/speaking`, label: dict.nav.speaking },
     { href: `/${locale}/cv`, label: dict.nav.cv },
   ];

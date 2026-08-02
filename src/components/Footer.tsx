@@ -19,6 +19,14 @@ export function Footer({ locale, dict }: Props) {
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/70">
             {dict.footer.tagline}
           </p>
+          <a
+            href={dict.footer.linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block text-sm text-white/75 underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white/60"
+          >
+            {dict.footer.linkedin}
+          </a>
         </div>
 
         <div>
@@ -27,18 +35,8 @@ export function Footer({ locale, dict }: Props) {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/75">
             <li>
-              <Link href={`/${locale}/economic-development`} className="hover:text-white">
-                {dict.nav.economicDev}
-              </Link>
-            </li>
-            <li>
               <Link href={`/${locale}/services`} className="hover:text-white">
                 {dict.nav.services}
-              </Link>
-            </li>
-            <li>
-              <Link href={`/${locale}/ai-expertise`} className="hover:text-white">
-                {dict.nav.ai}
               </Link>
             </li>
             <li>

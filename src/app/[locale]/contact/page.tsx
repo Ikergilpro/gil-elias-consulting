@@ -39,6 +39,17 @@ export default async function ContactPage({ params }: Props) {
                 </p>
                 <p className="mt-2 text-sm text-ink">{t.emailValue}</p>
                 <p className="mt-2 text-xs text-copper">{t.emailNote}</p>
+                <p className="mt-6 text-xs uppercase tracking-[0.14em] text-graphite">
+                  {t.linkedinLabel}
+                </p>
+                <a
+                  href={t.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-sm text-ink underline decoration-sage/40 underline-offset-4 hover:decoration-sage"
+                >
+                  linkedin.com/in/gil-elias-2837765
+                </a>
               </div>
             </div>
           </aside>

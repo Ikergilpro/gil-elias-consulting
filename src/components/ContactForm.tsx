@@ -8,15 +8,43 @@ type Props = {
   dict: Dictionary;
 };
 
+type Status = "idle" | "sending" | "error";
+
 export function ContactForm({ dict }: Props) {
   const [type, setType] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setStatus("sending");
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
 
   if (submitted) {
     return (
       <div className="rounded-sm border border-sage/30 bg-sage-soft/40 p-8">
-        <h3 className="font-serif text-2xl text-ink">{dict.contact.successTitle}</h3>
-        <p className="mt-3 text-graphite leading-relaxed">{dict.contact.successBody}</p>
+        <h3 className="text-base font-medium text-ink">{dict.contact.successTitle}</h3>
+        <p className="mt-3 text-base leading-relaxed text-graphite">
+          {dict.contact.successBody}
+        </p>
       </div>
     );
   }
@@ -47,13 +75,7 @@ export function ContactForm({ dict }: Props) {
       </div>
 
       {type && (
-        <form
-          className="animate-fade-up space-y-5"
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSubmitted(true);
-          }}
-        >
+        <form className="animate-fade-up space-y-5" onSubmit={handleSubmit}>
           <p className="text-xs font-medium uppercase tracking-[0.14em] text-graphite">
             02 — {dict.contact.step2}
           </p>
@@ -100,12 +122,27 @@ export function ContactForm({ dict }: Props) {
           </div>
 
           <input type="hidden" name="type" value={type} />
+          <div className="hidden" aria-hidden="true">
+            <label htmlFor="companyWebsite">Website</label>
+            <input
+              id="companyWebsite"
+              name="companyWebsite"
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </div>
+
+          {status === "error" && (
+            <p className="text-sm text-copper">{dict.contact.errorBody}</p>
+          )}
 
           <button
             type="submit"
-            className="rounded-sm bg-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-ink/90"
+            disabled={status === "sending"}
+            className="rounded-sm bg-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-ink/90 disabled:opacity-60"
           >
-            {dict.contact.fields.submit}
+            {status === "sending" ? dict.contact.sending : dict.contact.fields.submit}
           </button>
         </form>
       )}

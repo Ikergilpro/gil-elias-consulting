@@ -52,26 +52,8 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="border-b border-stone bg-stone/40">
-        <div className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
-          <p className="text-xs font-medium uppercase tracking-[0.14em] text-graphite">
-            {t.trustLabel}
-          </p>
-          <ul className="mt-4 grid gap-3 md:grid-cols-3">
-            {t.trustItems.map((item) => (
-              <li
-                key={item}
-                className="border-l-2 border-sage pl-4 text-sm leading-relaxed text-ink"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       <section className="border-b border-stone">
-        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-16">
           <h2 className="font-serif text-3xl text-ink md:text-4xl">{t.audienceTitle}</h2>
           <div className="mt-10 divide-y divide-stone border-y border-stone">
             {t.audiences.map((a) => (

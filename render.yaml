@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: gil-elias-consulting
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NODE_ENV
+        value: production
+      - key: RESEND_API_KEY
+        sync: false
+      - key: RESEND_FROM_EMAIL
+        sync: false
+      - key: CONTACT_TO_EMAIL
+        value: jgelias.o@gmail.com

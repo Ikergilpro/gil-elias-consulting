@@ -26,7 +26,7 @@ export default async function AboutPage({ params }: Props) {
               {t.title}
             </h1>
             <p className="mt-2 text-sm uppercase tracking-[0.12em] text-sage">{t.role}</p>
-            <p className="mt-8 font-serif text-2xl leading-snug text-ink md:text-3xl">
+            <p className="prose-measure mt-8 text-base leading-relaxed text-graphite">
               {t.lede}
             </p>
             <div className="mt-8 space-y-5">
@@ -44,6 +44,14 @@ export default async function AboutPage({ params }: Props) {
               <ButtonLink href={`/${locale}/cv`} variant="secondary">
                 CV
               </ButtonLink>
+              <a
+                href={t.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border border-ink/20 bg-transparent px-5 py-3 text-sm font-medium tracking-wide text-ink transition duration-200 hover:bg-stone/60"
+              >
+                {t.linkedin}
+              </a>
             </div>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm lg:col-span-6 lg:aspect-auto lg:min-h-[560px]">
@@ -55,15 +63,6 @@ export default async function AboutPage({ params }: Props) {
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
-        </div>
-      </section>
-
-      <section className="border-b border-stone bg-stone/30">
-        <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-          <h2 className="font-serif text-3xl text-ink">{t.methodTitle}</h2>
-          <p className="prose-measure mt-4 text-lg leading-relaxed text-graphite">
-            {t.methodBody}
-          </p>
         </div>
       </section>
 

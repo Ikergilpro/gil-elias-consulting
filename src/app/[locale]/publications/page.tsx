@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CtaBand } from "@/components/CtaBand";
 import { PageHero } from "@/components/PageHero";
@@ -13,10 +14,51 @@ export default async function PublicationsPage({ params }: Props) {
   const dict = getDictionary(locale);
   const t = dict.publications;
   const n = t.newsletter;
+  const book = t.book;
 
   return (
     <>
       <PageHero eyebrow={t.eyebrow} title={t.title} intro={t.intro} />
+
+      <section className="border-b border-stone">
+        <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
+            <div className="relative mx-auto aspect-[2/3] w-full max-w-[240px] overflow-hidden rounded-sm border border-stone shadow-sm lg:col-span-4 lg:mx-0 lg:max-w-none">
+              <Image
+                src={book.cover}
+                alt={book.coverAlt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 240px, 33vw"
+                priority
+              />
+            </div>
+            <div className="lg:col-span-8">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-sage">
+                {book.eyebrow}
+              </p>
+              <h2 className="mt-3 font-serif text-3xl text-ink md:text-4xl">
+                {book.title}
+              </h2>
+              <p className="mt-2 text-lg text-graphite">{book.subtitle}</p>
+              <p className="mt-3 text-xs uppercase tracking-[0.1em] text-graphite">
+                {book.meta}
+              </p>
+              <div className="mt-8 border-t border-stone pt-8">
+                <p className="text-xs font-medium uppercase tracking-[0.14em] text-sage">
+                  {book.chapterLabel}
+                </p>
+                <h3 className="mt-3 font-serif text-2xl text-ink">
+                  {book.chapterTitle}
+                </h3>
+                <p className="mt-4 text-base leading-relaxed text-graphite">
+                  {book.role}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="border-b border-stone bg-stone/30">
         <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
